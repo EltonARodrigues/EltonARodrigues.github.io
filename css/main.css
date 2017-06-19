@@ -28,7 +28,7 @@ span {
 }
 
 span:hover{  text-decoration: line-through; }
-@media screen and (min-width: 1020px) {
+/*@media screen and (min-width: 1020px) {
 
 
 /*Fim da formatação de texto*/
@@ -102,9 +102,9 @@ svg{
   fill: green;
 }
 /*fim imagens*/
-}
+/*}*/
 
 
-@media screen and (max-width: 1020px) {
+/*@media screen and (max-width: 1020px) {
 
-}
+}*/
