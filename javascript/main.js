@@ -1,18 +1,23 @@
-function hideFO() {
-  document.getElementById('fo').style.display = "block";
-  document.getElementById('co').style.display = "none";
-  document.getElementById('lk').style.display = "none";
 
+function teste(ttt){
+
+    $('html, body').animate({
+        scrollTop: $(ttt).offset().top
+    }, 500);
 }
-function hideCO() {
-  document.getElementById('fo').style.display = "none";
-  document.getElementById('co').style.display = "block";
-  document.getElementById('lk').style.display = "none";
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
 }
-function hideLK() {
-  document.getElementById('fo').style.display = "none";
-  document.getElementById('co').style.display = "none";
-  document.getElementById('lk').style.display = "block";
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
