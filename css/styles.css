@@ -1,202 +1,152 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sarabun');
-
-
-html, body{
-    height: 100%;
-    width: 100%;
-    background: #f5f8fa;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: 'Sarabun', sans-serif;
-
-  }
-
-.feature-1, .feature-2{
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
+html,
+body {
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Fira Code';
 }
+
 .page {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .section {
-    width: 100%;
-    /*! height: 400px; */
-  }
-
-  .header {
-    background-color: #64b6ac;
-    justify-content: left;
-    text-align: left;
-    position: relative;
-    height: 300px;
-  }
-
-
-
-  .sign-up {
-    height: 200px;
-    order: 1;
-  }
-  .content {
-    order: 2;
-  }
-
-
-
-.top-bar{
-    background-color: #a6cfd5;
-    width: 100%;
-    height: 200px;
-    padding: 100px;
-    position: absolute;
-    top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-h1{
-    color: #fff;
-    padding-top: 200px;
-    font-size: 40px;
+.section {
+  width: 100%;
+}
+
+.header {
+  height: 83%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 h2 {
-  padding: 20px;
   font-size: 30px;
 }
 
-h3{
-  padding: 5px;
+h3 {
   font-size: 20px;
 }
 
-h{
+h1,
+h2,
+h3 {
   padding: 5px;
-  font-size: 20px;
 }
 
-p{
+p {
   padding: 10px;
   font-size: 15px;
 }
 
-.uli, .lii {
-    display: inline-block;
-    margin: 31.3px 45px;
+.uli,
+.lii {
+  display: flex;
 
-}
-
-svg:hover path {
-    filter: invert(50%);
-}
-svg path {
-    filter: invert(100%);
-  }
-
-.div-menu{
-  position: absolute;
-  top:90.3%;
-}
-
-.linkul, .link-menu{
-  /*! color: red; */
-  background-color: #f5f8fa;
-  padding: 20px;
-}
-
-.link-menu:hover{
-  /*! background-color: red; */
-}
-
-li{
-  list-style: none;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul, li{
-  display: inline;
-}
-
-.linkb{
-  text-decoration: none;
-  color: #000;
-  padding: 0;
-  margin: 0;
-}
-
-.main-feature{
-    align-self: center;
-    /*! padding: 50px; */
-    margin: 50px;
-}
-
-/* smatphone Styles */
-@media only screen and (max-width: 524px) {
-  h1{
-    padding-top: 100px;
-    padding-left: 30px;
-    font-size: 40px;
-  }
-}
-
-/* tablet Styles */
-@media only screen and (max-width: 960px) {
-
-  h1{
-    padding: 100px 0 30px 30px;
-    font-size: 40px;
-    padding-left: 30px;
-  }
-}
-
-
-  /* Desktop Styles */
-@media only screen and (min-width: 961px) {
-    .page {
-      width: 100%;
-      margin: 0 auto;
-    }
-    .feature-1,
-    .feature-2,
-    .feature-3 {
-     width: 50%;
-      padding-top: 130px;
-    }
-    .header {
-      height: 400px;
-    }
-    h1{
-      padding-left: 250px;
-    }
-
-  }
-
-.feature-2{
-  display: block;
-}
-
-
-a:hover{
-    border-bottom: 5px solid #64b6ac;
 }
 
 .uli {
-  max-width: 1200px;
   margin: 0 auto;
-}
-.uli:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+  padding: 10px;
 }
 
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0 2.5px;
+  margin: 0;
+}
+
+svg {
+  min-height: 30%;
+  min-height: 30%;
+
+  padding: 25px 45px 20px 45px;
+}
+
+svg:hover path {
+  filter: invert(50%);
+}
+
+.inte {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inte_list {
+  overflow: auto hidden;
+  display: flex;
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    background-color: #F0F0F0;
+    color: #404040
+  }
+
+  svg {
+    fill: #404040;
+  }
+
+  .inte {
+    background-color: #dfdfdf;
+  }
+}
+
+a:hover {
+  background-color: #242424;
+  border-radius: 5px
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    background-color: #404040;
+    color: #F0F0F0;
+  }
+
+  svg {
+    fill: #F0F0F0;
+  }
+
+  .inte {
+    background-color: #626262;
+  }
+}
 
 
+.meme {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+}
+
+.meme p {
+  font-size: 5px;
+  padding: 1px;
+}
